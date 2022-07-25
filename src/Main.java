@@ -45,9 +45,9 @@ public class Main {
                     break;
             }
             if (hundreds!=0) alert += "hundreds and";
-            switch (tens){
+            switch (tens) {
                 case 1:
-                    switch (ones){
+                    switch (ones) {
                         case 0:
                             alert += "ten";
                             break;
@@ -79,59 +79,62 @@ public class Main {
                             alert += "nineteen";
                             break;
                     }
-                    break;
-                case 2:
-                    alert += "twenty";
-                    break;
-                case 3:
-                    alert += "thirty";
-                    break;
-                case 4:
-                    alert += "forty";
-                    break;
-                case 5:
-                    alert +="fitty";
-                    break;
-                case 6:
-                    alert += "sixty";
-                    break;
-                case 7:
-                    alert += "seventy";
-                    break;
-                case 8:
-                    alert += "eight";
-                case 9:
-                    alert += "ninety";
-                    break;
-            }
-            switch (ones){
-                case 1:
-                    alert += "one";
-                    break;
-                case 2:
-                    alert += "two";
-                    break;
-                case 3:
-                    alert += "three";
-                    break;
-                case 4:
-                    alert += "four";
-                    break;
-                case 5:
-                    alert += "five";
-                    break;
-                case 6:
-                    alert += "six";
-                    break;
-                case 7:
-                    alert += "seven";
-                    break;
-                case 8:
-                    alert += "eight";
-                    break;
-                case 9:
-                    alert += "nine";
-                    break;
+                    if (tens != 1) {
+                        switch (ones) {
+                            case 2:
+                                alert += "twenty";
+                                break;
+                            case 3:
+                                alert += "thirty";
+                                break;
+                            case 4:
+                                alert += "forty";
+                                break;
+                            case 5:
+                                alert += "fitty";
+                                break;
+                            case 6:
+                                alert += "sixty";
+                                break;
+                            case 7:
+                                alert += "seventy";
+                                break;
+                            case 8:
+                                alert += "eight";
+                            case 9:
+                                alert += "ninety";
+                                break;
+                        }
+                        switch (ones) {
+                            case 1:
+                                alert += "one";
+                                break;
+                            case 2:
+                                alert += "two";
+                                break;
+                            case 3:
+                                alert += "three";
+                                break;
+                            case 4:
+                                alert += "four";
+                                break;
+                            case 5:
+                                alert += "five";
+                                break;
+                            case 6:
+                                alert += "six";
+                                break;
+                            case 7:
+                                alert += "seven";
+                                break;
+                            case 8:
+                                alert += "eight";
+                                break;
+                            case 9:
+                                alert += "nine";
+                                break;
+                        }
+                    }
             }
         }
         String output = alert.substring(0,1).toLowerCase() + alert.substring(1)+".";
